@@ -190,6 +190,8 @@ Korzystając z modułu math wykonaj poniższe działania i wyświetl ich wynik w
 * $\lfloor 3.55 \rfloor$
 * $\lceil 4.80 \rceil$
 
+<img src="https://render.githubusercontent.com/render/math?math=e^{10}">
+
 ## 4. Typy wbudowane (ang. python builtins)
 
 Już w dokumencie PEP8 możemy wyczytać, że istnieją nazwy zarezerwowane, których nie możemy używać dla naszych zmiennych (problemy pojawią się również przy nazywaniu pakietów i modułów) gdyż prowadzi to często nie tyle do jawnego błędu składniowego (ang. syntax error) zgłaszanego przez interpreter Pythona, ale częściej do błędów logicznych lub czasu wykonania (ang. logical error, runtime errors), które są dużo trudniejsze do wychwycenia i zdebugowania.

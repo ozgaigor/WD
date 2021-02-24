@@ -191,7 +191,7 @@ Korzystając z modułu math wykonaj poniższe działania i wyświetl ich wynik w
 * $\lceil 4.80 \rceil$
 
 * <img src="https://render.githubusercontent.com/render/math?math=e^{10}">
-* <img src="https://render.githubusercontent.com/render/math?math=\sqrt[6]{ln(5 + {sin^2}8)}">
+* <img src="https://render.githubusercontent.com/render/math?math=\sqrt[6]{ln(5 \+ {sin^2}8)}">
 * <img src="https://render.githubusercontent.com/render/math?math=\lfloor 3.55 \rfloor">
 * <img src="https://render.githubusercontent.com/render/math?math=\lceil 4.80 \rceil">
 

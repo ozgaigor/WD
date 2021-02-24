@@ -191,7 +191,7 @@ Korzystając z modułu math wykonaj poniższe działania i wyświetl ich wynik w
 * $\lceil 4.80 \rceil$
 
 * <img src="https://render.githubusercontent.com/render/math?math=e^{10}">
-* <img src="https://render.githubusercontent.com/render/math?math=\sqrt[6]{ln(5 \Plus {sin^2}8)}">
+* <img src="https://render.githubusercontent.com/render/math?math=\sqrt[6]{ln({5%2b}{sin^2}8)}">
 * <img src="https://render.githubusercontent.com/render/math?math=\lfloor 3.55 \rfloor">
 * <img src="https://render.githubusercontent.com/render/math?math=\lceil 4.80 \rceil">
 
@@ -268,9 +268,22 @@ print(len(nazwisko))
 
 **Zadanie 2**  
 Zapisz swoje imie i nazwisko w oddzielnych zmiennych wszystkie wielkimi literami. Użyj odpowiedniej metody by wyświetlić je pisane tak, że pierwsza litera jest wielka a pozostałe małe. (trzeba użyć metody capitalize)
+
 **Zadanie 3**  
 Napisz skrypt, gdzie w zmiennej string zapiszesz fragment tekstu piosenki z powtarzającymi się słowami np. „la la la”. Następnie użyj odpowiedniej funkcji, która zliczy występowanie słowa „la”. (trzeba użyć metody count)
+
 **Zadanie 4**  
 Do poszczególnych elementów łańcucha możemy się odwoływać przez podanie indeksu. Np. pierwszy znak zapisany w zmiennej imie uzyskamy przez imie[0]. Zapisz dowolną zmienną łańcuchową i wyświetl jej drugą i ostatnią literę, wykorzystując indeksy.
+
 **Zadanie 5**  
-Zmienne łańcuchowe możemy dzielić wykorzystaj zmienną z Zad. 6 i spróbuj ją podzielić na poszczególne wyrazy. (trzeba użyć metody split)
+Zmienne łańcuchowe możemy dzielić wykorzystaj zmienną z Zad. 6 i spróbuj ją podzielić na poszczególne wyrazy. (trzeba użyć metody split).
+
+**Zadanie 6**  
+Pobierz ze strony https://pl.lipsum.com/ tekst akapitu o tytule „Czym jest Lorem Ipsum” i przypisz go
+do zmiennej.
+
+**Zadanie 7**  
+Wyświetl na konsoli tekst postaci „W tekście jest {liczba_liter1} liter … oraz {liczba_liter2} liter …” . W miejsca { } podstaw zmienne, które będą przechowywały liczbę wystąpień danych liter. Litery, które mają być wyszukane powinny zostać przekazane jako indeks do 3 znaku nazwiska oraz 2 znaku imienia osoby wykonującej ćwiczenie, np. imie = „Krzysztof”, nazwisko = „Ropiak”, litera_1 = imie[2], litera_2 = nazwisko[3].
+
+**Zadanie 8**  
+Przejdź na stronę https://pyformat.info/ a następnie zapisz w oddzielnym pliku .py i wykonaj 5 wybranych przykładów formatowania ciągów oznaczonego jako „New”, których nie było w przykładach z tego podrozdziału (np. z wyrównaniem, ilością pozycji liczby, znakiem itp.).

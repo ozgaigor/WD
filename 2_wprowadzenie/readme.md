@@ -10,8 +10,8 @@ a = input("Tu jest jakiś komunikat np. Podaj liczbę\n")
 print(a)
 
 # Możemy użyć też komend readline() i write(s), które są w module sys
-
 import sys
+
 print("Podaj jakiś tekst")
 s = sys.stdin.readline() #Wczytuje wiersz
 print("Twój tekst to: " + s)
@@ -31,14 +31,14 @@ Napisz skrypt, który pobiera od użytkownika dwie wartości i mnoży je przez s
 **Składnia:**  
 ```python
 if warunek_1:
-Instrukcje_1
+    Instrukcje_1
 [elif warunek_2:
-Instrukcje_2:
+    Instrukcje_2:
 …
 elif warunek_n:
-Instrukcje_n
+    Instrukcje_n
 else:
-Inne_instrukcje]
+    Inne_instrukcje]
 ```
 
 **_Listing 2_**
@@ -89,9 +89,9 @@ Jeśli warunki są spełnione lub nie to ma się wyświetlić odpowiedni komunik
 **Składnia:**
 
 for licznik in sekwencja:
-Instrukcje
+    Instrukcje
 [else:
-inne_instrukcje]
+    inne_instrukcje]
 
 
 Sekwencją może być łańcuch, lista lub krotka. Od obliczenia sekwencji zaczyna się działanie instrukcji iteracyjnej. Licznik przyjmuje wartość pierwszego elementu wykonuje instrukcje, następnie przyjmuje wartość kolejnego elementu itd.
@@ -246,4 +246,3 @@ itd.
 
 **Zadanie 12**  
 Napisz skrypt, który wyświetla i oblicza tabliczkę mnożenia od 1 do 100 w formie znanej z lekcji matematyki w szkole podstawowej.
-

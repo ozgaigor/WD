@@ -121,10 +121,10 @@ else:
 
 
 **Zadanie 6**  
-Napisz pętlę, która wyświetla liczby podzielne przez 5.
+Napisz pętlę, która wyświetla liczby podzielne przez 5 z zakresu <0,50>
 
 **Zadanie 7**  
-Napisz pętle, która pobiera liczby od użytkownika i wyświetla ich kwadraty na ekranie.
+Napisz pętle, która pobiera liczby od użytkownika i wyświetla ich kwadraty na ekranie. Liczby pobierane są w postaci oddzielonej spacjami.
 
 ## **4. Instrukcja iteracyjna while**
 
@@ -140,6 +140,8 @@ inne_instrukcje]
 ```python
 # skrypt wyświetla losowe liczby całkowite aż napotka 5
 import random # biblioteka z funkcjami do losowania
+
+
 random.seed() # inicjowanie generatora
 z = random.randint(1, 15) # losowanie pierwszej liczby
 
@@ -173,14 +175,14 @@ lista = [1, 5, 3, 2, 6, 7, 8, 9, 10]
 print("Podaj liczbę a sprawdzę czy jest na liście")
 liczba = input()
 licznik = 0
-while licznik < 10:
 
-# Jeśli znajdziemy liczbę przerywamy
-if int(liczba) == lista[licznik]:
-    print("Twoja liczba: " + liczba + "znaleziona na pozycji: " + str(licznik))
-    break
-else:
-    licznik += 1 
+while licznik < 10:
+    # Jeśli znajdziemy liczbę przerywamy
+    if int(liczba) == lista[licznik]:
+        print("Twoja liczba: " + liczba + "znaleziona na pozycji: " + str(licznik))
+        break
+    else:
+        licznik += 1 
 ```    
 **Instrukcje iteracyjne zagnieżdżone**
 
@@ -200,6 +202,8 @@ H   H
 **_Listing 6_**
 ```python
 import sys
+
+
 for i in [1, 2, 3, 4, 5]:
     for j in [1, 2, 3, 4, 5]:
         #sprawdza czy jest w pionowej linii H

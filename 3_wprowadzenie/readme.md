@@ -13,7 +13,7 @@ for element in range(5):
         lista.append(element * element)
 
 # możemy zapisać w jednej linijce
-lista = [element * element for element in range(5) if pewien_warunek_na(element)]
+lista = [element * element for element in range(5) if element > 0]
 ```
 
 **Przykład**
@@ -67,7 +67,7 @@ for i in [1, 2, 3]:
 print(lista)
 
 # można to zrobić krócej
-lista2 = [(i,j) for i in [1, 2, 3] for j in [4, 5, 6]]
+lista2 = [(i,j) for i in [1, 2, 3] for j in [4, 5, 6] if i != j]
 print(lista2)
 ```
 
@@ -126,6 +126,8 @@ Funkcję możemy wywoływać z argumentami lub bez, ale zawsze musimy używać n
 Chcemy zdefiniować funkcję, która będzie obliczać pierwiastki równania kwadratowego:
 ```python
 import math
+
+
 def row_kwadratowe(a, b, c):
     delta = b**2 - 4 * a * c
     if (delta < 0):

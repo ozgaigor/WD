@@ -328,7 +328,7 @@ Zmienna `__all__` służy również do określania listy funkcji w module. Zmien
 aby mieć dostęp do listy klas, metod danego modułu np. po to, aby sprawdzić jakie funkcje możemy wywołać.
 
 
-Bardzo dobrze wytłumaczone jest to w artykule pod adresem http://xion.io/post/code/python-all-wildimports.html .
+Bardzo dobrze wytłumaczone jest to w artykule pod adresem http://xion.io/post/code/python-all-wild-imports.html .
 Struktura pakietów i modułów może być bardziej rozbudowana i rozmieszczona na kolejnych poziomach zagnieżdżenia. 
 
 Więcej informacji można znaleźć pod adresem https://docs.python.org/3/tutorial/modules.html

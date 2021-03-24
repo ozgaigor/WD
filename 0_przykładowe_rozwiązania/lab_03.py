@@ -60,11 +60,14 @@ def zad_7(a=3, b=4):
 
 def zad_8(a=1, r=2, ile=10):
     ciag = [x for x in range(a, r*ile+1, r)]
-    return ciag
+    return sum(ciag)
 
 
 def zad_9(ciag):
-    return sum(ciag)
+    wynik = 1
+    for elem in ciag:
+        wynik *= elem
+    return wynik
 
 
 def zad_10(** zakupy):
@@ -80,5 +83,5 @@ r = zad_6(2, 3, 4, 5)
 print(r)
 print(zad_7())
 print(zad_8())
-print(zad_9(zad_8()))
+print(zad_9([1, 2, 3]))
 print(zad_10(pomidor=10, marchew=20))

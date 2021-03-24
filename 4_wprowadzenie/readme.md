@@ -297,13 +297,13 @@ class Ksztalty:
         return self.x * self.y
 
     def obwod(self):
-        return 2*self.x + 2*self.y
+        return 2 * self.x + 2 * self.y
 
     def dodaj_opis(self, text):
         self.opis = text
         def skalowanie(self, czynnik):
-        self.x = self.x *czynnik
-        self.x = self.y *czynnik
+        self.x = self.x * czynnik
+        self.x = self.y * czynnik
 
     #Jakaś funkcja
     def zmieniam_tekst(tekst):
@@ -318,7 +318,7 @@ kwadrat = Ksztalty(10,30)
 print(kwadrat.__jestem_prywatna__)
 
 # a może uda nam się jeszcze zmienić wartość?
-kwadrat.__jestem_prywatna__="na na na"
+kwadrat.__jestem_prywatna__= "na na na"
 print(kwadrat.__jestem_prywatna__)
 
 # spróbujmy czy nowa funkcja coś może zmienić

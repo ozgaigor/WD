@@ -41,7 +41,7 @@ można użyć komend:
 
 **Przykład 1**
 ```python
-plik = open("Ćw1_przyklad1.py","r")
+plik = open("Ćw1_przyklad1.py", "r")
 
 #odczyt 10 znaków z pliku
 znaki = plik.read(10)
@@ -88,7 +88,7 @@ print("Podaj kierunek studiów, rok i specjalność")
 dane = sys.stdin.readline()
 
 # Otwieramy plik
-plik = open("dane.txt","w+")
+plik = open("dane.txt", "w+")
 
 # Zpaisujemy do pliku
 plik.write(dane)
@@ -98,7 +98,7 @@ plik.close()
 
 # tworzymy liste
 lista = []
-for x in range(1,6,1):
+for x in range(1, 6, 1):
     lista += [x]
 
 # otwieramy plik do dopisywania
@@ -188,14 +188,14 @@ class PierwszaKlasa:
     """Przykład klasy"""
     atrybut = 54321
 
-    def pierwsza_metoda(self, z):
-        return "Teraz działa pierwsza Metoda"
+    def witaj(self, name):
+        return f'Witaj {name}!'
 
 
 obiekt = PierwszaKlasa()
 print(obiekt)
 print(obiekt.atrybut)
-print(obiekt.pierwsza_metoda())
+print(obiekt.witaj('Adam'))
 ```
 
 **Przykład 7**
@@ -205,8 +205,8 @@ Dodajemy atrybut do instancji klasy
 class PierwszaKlasa:
     """Przykład klasy"""
     atrybut = 54321
-    def pierwsza_metoda(self, z):
-        return "Teraz działa pierwsza Metoda"
+    def witaj(self, name):
+        return f'Witaj {name}!'
 
 
 obiekt = PierwszaKlasa()
@@ -216,7 +216,7 @@ print(obiekt)
 print(obiekt.atrybut)
 
 #drukujemy metodę
-print(obiekt.pierwsza_metoda())
+print(obiekt.witaj('Adam'))
 
 #dodajemy atrybut do istniejącego obiektu
 obiekt.tekst = "la la la"
@@ -239,8 +239,8 @@ class Ksztalty:
     def __init__(self, x, y):
         #deklarujemy atrybuty
         #self wskazuje że chodzi o zmienne właśnie definiowanej klasy
-        self.x=x
-        self.y=y
+        self.x = x
+        self.y = y
         self.opis = "To będzie klasa dla ogólnych kształtów"
 
     def pole(self):
@@ -258,7 +258,7 @@ class Ksztalty:
 
 
 # Tworzymy obiekt
-kwadrat= Ksztalty(10,30)
+kwadrat = Ksztalty(10,30)
 
 # Sprawdzamy teraz jak działają metody które zwracają wartość
 print(kwadrat.pole())
@@ -278,7 +278,7 @@ Zgodnie z dokumentacją słowo kwalifikujące self jest używane bo taka jest ko
 **Uwaga 2:**  
 Niektóre funkcje można poprzedzić znakami __ i dla nas będą miały specjalne znaczenie. Konwencja mówi, że wtedy będą to zmienne lub funkcje prywatne czyli takie, które są widoczne tylko dla jednej klasy i nie mogą być modyfikowane przez funkcje i zmienne z innej klasy. W rzeczywistości jest to tylko umowa bo w Pythonie nie ma prywatnych zmiennych czy funkcji, wszystkie są publiczne.
 
-**Przykład 9**
+**Przykład 9**  
 Do Uwaga2.
 ```python
 class Ksztalty:
@@ -294,7 +294,7 @@ class Ksztalty:
         self.opis = "To będzie klasa dla ogólnych kształtów"
 
     def pole(self):
-        return self.x*self.y
+        return self.x * self.y
 
     def obwod(self):
         return 2*self.x + 2*self.y
@@ -312,7 +312,7 @@ class Ksztalty:
 
 
 # Tworzymy obiekt
-Kwadrat = Ksztalty(10,30)
+kwadrat = Ksztalty(10,30)
 
 # Sprawdzmy dostęp do zmiennej prywatnej
 print(kwadrat.__jestem_prywatna__)
@@ -335,7 +335,7 @@ oraz metody:
 * ile_produktu() – informacje ile danego produktu ma być czyli ilosc + jednostka_miary np. 1 szt., 3 kg itd.
 * ile_kosztuje() – oblicza ile kosztuje dana ilość produktu np. 3 kg ziemniaków a cena_jed wynosi 2 zł/kg wówczas funkcja powinna zwrócić wartość 3*2
 
-**Zad. 5**
+**Zad. 5**  
 
 Utwórz klasę, która definiuje ciągi arytmetyczne. Wartości powinny być przechowywane jako atrybut. Klasa powinna mieć metody:
 
@@ -367,7 +367,7 @@ Stwórz klasę **Robot**, która będzie sterować ruchami robota. Klasa powinna
 * idz_w_prawo(ile_krokow) – metoda która przesuwa robota o ile_krokow*krok w odpowiednim kierunku i ustawia nowe wartości współrzędnych x i y
 * pokaz_gdzie_jestes() – metoda, która wyświetla aktualne współrzędne robota
 
-Stwórz instancję klasy i sprawdź jak działają wszystkie metody
+Stwórz instancję klasy i sprawdź jak działają wszystkie metody.
 
 **Finalizer  to odpowiednik destruktora i niszczy instancje obiektu.**
 

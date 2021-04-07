@@ -10,18 +10,18 @@ Uruchamiamy terminal (poprzez system operacyjny lub wybrane narzędzie, w który
 python -m pip install virtualenv
 ```
 
-Warto zaznaczyć, iż w sytuacji, w której nie mamy jeszcze skonfigurowanego środowiska wirtualnego biblioteki, które zainstalujemy będą umieszczane w podfolderze `Lib/site-packages` w folderze domyślnej wersji Pythona (ścieżka zapisana w zmiennej środowiskowej PATH).
+Warto zaznaczyć, iż w sytuacji, w której nie mamy jeszcze skonfigurowanego środowiska wirtualnego biblioteki, które zainstalujemy będą umieszczane w podfolderze `Lib/site-packages` w folderze domyślnej wersji Pythona (ścieżka zapisana w zmiennej środowiskowej `PATH`).
 
 **Krok 2**  
-Teraz za pomocą zaintalowanego `virtualenv` tworzymy środowisko wirtualne dla konkretnego projektu. Środowiskow wirtualne jest kopią niezbędnych plików ze wskazanej instalacji Python z naszego systemu operacyjnego (możemy mieć wiele współistniejących zainstalowanych wersji języka Python) oraz podstawowych pakietów służących do instalacji dodatkowych bibliotek (są to najczęściej pip, setuptools). Co ciekawe środowisko wirtualne wykorzystywane dla danego projektu nie musi znajdować się wewnątrz danego projektu. Pozwala to na stworzenie jednej lokalizacji, w której przechowywane będą wszystkie środowiska wirtualne i dodatkowo możemy współdzielić środowiska między wiele projektów, które akurat wymagają tego samego zbioru bibliotek. Poniżej przykładowe polecenie, które stworzy środowisko wirtualne w podfolderze `venv` w bieżącej lokalizacji i wykorzysta domyślną wersję Pythona z naszego OS.
+Teraz za pomocą zaintalowanego `virtualenv` tworzymy środowisko wirtualne dla konkretnego projektu. Środowiskow wirtualne jest kopią niezbędnych plików ze wskazanej instalacji Python z naszego systemu operacyjnego (możemy mieć wiele współistniejących zainstalowanych wersji języka Python) oraz podstawowych pakietów służących do instalacji dodatkowych bibliotek (są to najczęściej `pip, setuptools`). Co ciekawe środowisko wirtualne wykorzystywane dla danego projektu nie musi znajdować się wewnątrz danego projektu. Pozwala to na stworzenie jednej lokalizacji, w której przechowywane będą wszystkie środowiska wirtualne i dodatkowo możemy współdzielić środowiska między wiele projektów, które akurat wymagają tego samego zbioru bibliotek. Poniżej przykładowe polecenie, które stworzy środowisko wirtualne w podfolderze `venv` w bieżącej lokalizacji i wykorzysta domyślną wersję Pythona z naszego systemu operacyjnego.
 
 ```console
 python -m virtualenv venv
 ```
 
-Większość narzędzi wspomagających projekty Pythonowe potrafi wykryć środowisko wewnątrz projektu i pozwala na jego aktywację za pomocą GUI, ale warto wiedzieć jak zrobić to samodzielnie. Aby aktywować wybrane środowisko dla projektu musimy uruchomić skrypt `activate` (w zależności od systemu operacyjnego) w terminalu. Do deaktywacji wykorzystamy z kolei plik `deactivate`. W/w pliki znajdziemy w podfolderze Scripts środowiska wirtualnego. Nie pojawi się żaden komunikat w przypadku powodzenia, ale ścieżka w terminalu zostanie poprzedzona nazwą aktywnego środowiska w nawiasach, np. `(venv) C:\projekty\projekt_2020`.
+Większość narzędzi wspomagających projekty Pythonowe potrafi wykryć środowisko wewnątrz projektu i pozwala na jego aktywację za pomocą GUI, ale warto wiedzieć jak zrobić to samodzielnie. Aby aktywować wybrane środowisko dla projektu musimy uruchomić skrypt `activate` (w zależności od systemu operacyjnego) w terminalu. Do deaktywacji wykorzystamy z kolei plik `deactivate`. W/w pliki znajdziemy w podfolderze `Scripts` środowiska wirtualnego. Nie pojawi się żaden komunikat w przypadku powodzenia, ale ścieżka w terminalu zostanie poprzedzona nazwą aktywnego środowiska w nawiasach, np. `(venv) C:\projekty\projekt_2021`.
 
-Jeżeli chcemy utworzyć środowisko wirtualne bazując na innej niż domyślna instalacja Pythona należy przejść do folderu instalacji porządanej wersji, podfolderu Lib gdzie znajduje się plik python.exe. Uruchomienie w tej ścieżce `python -V` w terminalu pomoże się upewnić czy wersja Pythona się zgadza. Teraz możemy zainstalować ponownie virtualenv w tej lokalizacji i utworzyć środowisko wirtualne podając pełną ścieżkę, w której ma zostać utworzone. np.
+Jeżeli chcemy utworzyć środowisko wirtualne bazując na innej niż domyślna instalacja Pythona należy przejść do folderu instalacji porządanej wersji, podfolderu Lib gdzie znajduje się plik `python.exe`. Uruchomienie w tej ścieżce `python -V` (lub `py -V`) w terminalu pomoże się upewnić czy wersja Pythona się zgadza. Teraz możemy zainstalować ponownie `virtualenv` w tej lokalizacji i utworzyć środowisko wirtualne podając pełną ścieżkę, w której ma zostać utworzone. np.
 ```console
 python -m virtualenv C:\projekty\projekt_2021
 ```
@@ -42,7 +42,7 @@ Możemy również zainstalować wybraną wersję biblioteki poprzez odpowiednie 
 
 ### **2. Tworzenie tablic numpy**
 
-Tablice biblioteki Numpy to kolekcje, które mogą przechowywać dane jednorodne, czyli dane tego samego typu. Taki stan rzeczy powoduje, że w kwestii przechowywania danych nie są tak uniwersalne jak listy, ale z racji tego, że znając typ danych, który będzie przechowywany można łatwo obliczyć jaki będzie rozmiar tablicy w pamięci. Dzięki temu Numpy może wykonywać operacje na całych wektorach wartości a nie na pojedynczych elementach jak w przypadku list. Biblioteka Numpy w znakomitej części jest napisana w języku C co zapewnia bardzo wysoką wydajność większości operacji.
+Tablice biblioteki Numpy to kolekcje, które mogą przechowywać dane jednorodne, czyli dane tego samego typu. Taki stan rzeczy powoduje, że w kwestii przechowywania danych nie są tak uniwersalne jak listy, ale z racji tego, że znając typ danych, który będzie przechowywany można łatwo obliczyć jaki będzie rozmiar tablicy w pamięci. Dzięki temu Numpy może wykonywać operacje na całych wektorach wartości a nie na pojedynczych elementach jak w przypadku list. Biblioteka `numpy` w znakomitej części jest napisana w języku C co zapewnia bardzo wysoką wydajność większości operacji.
 Deklaracja tablicy korzystającej z podobnego mechanizmu działania jak funkcja `range()`:
 ```python
 import numpy as np
@@ -51,7 +51,7 @@ a = np.arange(2)
 
 Po wypisaniu zmiennej otrzymamy informacje postaci `array([0, 1])` lub `[0 1]` w zależności od tego czy kod zostanie uruchomiony w konsoli czy ze skryptu.
 
-Faktyczną nazwą klasy dla tablic Numpy jest ndarray co stanowi skrót od n-dimensional array czyli tablica n-wymiarowa.
+Faktyczną nazwą klasy dla tablic Numpy jest ndarray co stanowi skrót od `n-dimensional array` czyli tablica n-wymiarowa.
 
 **Przykład 1**
 ```python
@@ -98,7 +98,7 @@ Stwórz listę składającą się z wartości zmiennoprzecinkowych a następnie 
 
 **Zadanie 3**  
 Napisz funkcję, która będzie:
-- przyjmowała jeden parametr ‘n’ w postaci liczby całkowitej
+- przyjmowała jeden parametr `n` w postaci liczby całkowitej
 - zwracała tablicę Numpy o wymiarach n*n kolejnych liczb całkowitych poczynając od 1
 
 Istnieją sposoby na szybkie stworzenie bardziej rozbudowanych tablic/macierzy.

@@ -221,7 +221,7 @@ print(janek.__prywatna)    # to nie zadziała
 print(janek._Pracownik__prywatna)   # ale to już tak
 ```
 
-### **3. Konstruktor klasy bazowej i dziedziczenie wielokrotne.**
+### **4. Konstruktor klasy bazowej i dziedziczenie wielokrotne.**
 
 
 Poniższy przypadek pokazuje ponownie dziedziczenie jednokrotne po klasie bazowej, gdzie mamy 3 klasy:
@@ -304,7 +304,7 @@ print(adrian.przedstaw_sie())
 ```
 
 
-### **4. Iteratory i generatory.**
+### **5. Iteratory i generatory.**
 
 Rozpatrując poniższy fragment kodu:
 ```python
